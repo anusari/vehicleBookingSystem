@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+body{font-family: 'Poppins'; text-align: center; margin: 0;}
+.wrapper{width: 90%; margin: 0 auto; position: fixed;}
+header{width: 100%;height: 100px;background-color: #000000; position: fixed;}
+.logo{width: 30%; float: left; text-align: left; line-height: 100px; padding: 0px 35px;}
+.logo a{text-decoration: none; font-size: 30px;font-family: 'Pacifico'; color: rgb(255, 187, 0); letter-spacing: 4px;}
+nav{float: right;line-height: 100px;}
+nav a{text-decoration: none;font-family: 'Poppins'; letter-spacing: 4px; font-size: 22px; padding: 30px 10px; margin: 0 1px;font-weight: 500;color:#9389ff;}
+nav a:hover{background-color: rgb(255, 187, 0);color: #130f40;font-weight: 1000; }
+.banner-area{background-image: url(img/baner\ with\ logo.jpg);background-size: cover; background-position: center; top: 100px; height: 100vh; width: 100%;position: fixed;}
+.banner-area:after{content: '';position: absolute;top: 0; left: 0; display: block; width: 100%;height: 100%;background: #000000; opacity: .3;z-index: -1;}
+.banner-area h2{padding-top: 8%;font-size: 80px;color: #fff;}
+.content-area{ width: 100%;height: 800px;position: relative; background: #fff;top: 550px;}
+.content-area h2{font-size: 40px; margin: 0;padding: 30px; letter-spacing: 4px;}
+.content-area p{padding: 2% 0;line-height: 35px;text-align: justify;}
+.footer1{float: right; padding: 15 25;}
+.footer2{float: left; top: 2800}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&family=Oswald&display=swap');
+
+body{background:linear-gradient(to bottom,#353534, #8e8e8e); background-repeat: no-repeat; }
+.row{text-align: center; padding: 100px 5px; height: 50; }
+.head1{height: 30px; font-size:50px;text-align: center;font-family: Oswald; letter-spacing: 4px; color: #fff; }
+
+.head2{font-size: 16px; font-family: 'Oswald', sans-serif;; color: rgb(193, 185, 185) ; font-weight: 100; letter-spacing: 2px;}
+.container{width: 100%;}
+.col6{text-align: center;}
+#name{ width: 500px;height: 66px; padding: 10 5; margin-bottom: 10; border-radius: 10px; border-color: transparent;}
+#email{width: 500px;height: 66px; padding: 10 5; margin-bottom: 10; border-radius: 10px; border-color: transparent;}
+#message{width: 25%;height: 140px; padding: 10 5; margin-bottom: 10; border-radius: 10px; border-color: transparent;}
+#sendMessageButton{font-family: 'Oswald', sans-serif;width: 300px; border-radius: 8px; border-color: transparent;height: 66; background-color: rgb(185, 236, 0); color: #fff; font-weight: bold; font-size: 20px;}
+::placeholder{font-family: inherit; font-size: 20px; font-weight: bold;color: #c9c2c2;}
+

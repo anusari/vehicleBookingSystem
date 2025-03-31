@@ -1,0 +1,91 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vehicle submission Form</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  
+
+    <div class="full-page">
+        <div class="navbar">
+            <div>
+                <a href='Form.html'>Vehicle submission Form</a>
+            </div>
+            <nav>
+                <ul id='Items'>
+                    <li><a href='#'>Home</a></li>
+                    <li><a href='#'>About Us</a></li>
+                    <li><a href='#'>Services</a></li>
+                    <li><a href='#'>Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <form method="post"  action="success.html" autocomplete="off" >
+          <input autocomplete="false" type="text" style="display:none"/>
+        <div class='vehicle-submission-form'>
+            <div class="form-box">
+                <div class='topic-box'>
+                    <div id="topic"><b>Vehicle Booking Form</b></div>         
+                </div>
+
+               
+                    <div class="title">Welcome</div>
+                    <div class="subtitle">Let's book a Vehicle!</div>
+                    <div class="input-container ic1">
+                      <input id="fullname" class="input" type="text" placeholder=" " required/>
+                      <div class="cut"></div>
+                      <label for="fullname" class="placeholder">Full name</label>
+                    </div>
+                   
+                    <div class="input-container ic2">
+                      <input id="email" class="input" type="email" placeholder=" " required/>
+                      <div class="cut cut-short"></div>
+                      <label for="email" class="placeholder">Email</label>
+                    </div>
+
+                    <div class="input-container ic2">
+                        <input id="phone" class="input" type="text" placeholder=" " pattern="[0-9]{3}-[0-9]{7}" maxlength="11" required/>
+                        <div class="cut cut-long"></div>
+                        <label for="phone" class="placeholder">Phone (e.g.071-1234567)</label>
+                        <div class="requirements"> Must be a valid Phone Number!</div>
+                      </div>
+
+                      <div class="input-container ic2">
+                        <input id="address" class="input" type="text" placeholder=" " required/>
+                        <div class="cut"></div>
+                        <label for="address" class="placeholder">Address</label>
+                      </div>
+
+                      <div class="input-container ic2">
+                        <label for="checkin-date" class="label-text">Check-in Date</label>
+                        <input type="date" id="checkin-date" name="checkin" class="input" required>
+                      </div>
+
+                      <div class="input-container ic2">
+                        <label for="checkout-date" class="label-text">Check-out Date</label>
+                        <input type="date" id="checkout-date" name="checkout" class="input" required>
+                      </div>
+
+                    <button class="submit" onclick=checkDate() id="submit-btn">submit</button>
+                  
+            </div>
+        </div>
+    </div>
+</form>
+<script>
+
+function checkDate(){
+  ci_date = document.getElementById("checkin-date").value;
+  co_date = document.getElementById("checkout-date").value;
+
+
+  if(ci_date > co_date){
+    alert("please select a date equal or after checkin date !!!");
+    document.getElementById("checkout-date").value = " ";
+  }
+}
+</script> 
+</body>
+</html>

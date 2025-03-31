@@ -1,0 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+body{background:linear-gradient(to bottom,#353534, #8e8e8e);}
+.row{text-align: center; padding: 10px 5px;}
+.head1{height: 48px; font-size:50px;text-align: center;font-family: Oswald; letter-spacing: 4px; color: #fff; }
