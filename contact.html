@@ -1,0 +1,69 @@
+<html>
+    
+    <head>
+       
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styleJ.css">
+        <script src="contact.js"></script>
+    </head>
+   
+    <body id="cont">
+        
+        <header>
+            <div class="wrapper">
+                <div class="logo">
+                    <a href="a">Vehicle Booking</a>
+                </div>
+                <nav>
+                    <a href="homepage.html">Home</a>
+                    <a href="category page.html">Category</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </header>
+    <selection id = "contact" >
+        <div class="container">
+            <div class="row">
+                <div class="12">
+                    <h2 class="head1">CONTACT US</h2>
+                    <h3 class="head2">Thanks for contacting us</h3>
+
+                </div> 
+            </div>
+            <div class="row">
+                <form name="form" onsubmit="return allLettter_number()" method="post" action="Thank_you.html" >
+                <div class="col6">
+                    <div class="group3">
+                        <input id="name" name="yn" class="formcontrol" type="text" placeholder="Your Name*" required/>
+
+                    </div>
+                    
+                    <div class="group3">
+                        <input id="email" class="formcontrol" type="email" placeholder="Your email*" required/>
+
+                    </div>
+                    
+                    <div class="group3">
+                        <input id="phone" name="pn" class="formcontrol" type="tel" placeholder="Your Phone*" required/>
+
+                    </div>
+                    
+                    <div class="col 6">
+                        <textarea id="message" class="formcontrol" placeholder="Your Message*"></textarea>
+                    </div>
+                    <div class="button">
+                        <button id="sendMessageButton">SEND MESSAGE</button>
+                    </div>
+
+
+                </div>
+                </form>
+            </div>
+
+        </div>
+    
+    
+    </selection>
+    </body>
+</html>

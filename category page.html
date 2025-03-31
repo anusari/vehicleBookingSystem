@@ -1,0 +1,130 @@
+<html>
+<head>
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+	@import url('https://fonts.googleapis.com/css?family=Pacifico');
+	.wrapper{width: 90%; margin: 0 auto; position: fixed;}
+		header{width: 100%;height: 100px;background-color: #000000; position: fixed;}
+		.logo{width: 30%; float: left; text-align: left; line-height: 100px; padding: 0px 35px;}
+		.logo a{text-decoration: none; font-size: 30px;font-family: 'Pacifico'; color: rgb(255, 187, 0); letter-spacing: 4px;}
+		nav{float: right;line-height: 100px;}
+		nav a{text-decoration: none;font-family: 'Poppins'; letter-spacing: 4px; font-size: 22px; padding: 30px 10px; margin: 0 1px;font-weight: 500; color:#9389ff;}
+		nav a:hover{background-color: rgb(255, 187, 0);color: #130f40;font-weight: 1000;}
+		
+	.container{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	transform: translate()-50% , -50%);
+}
+.cards{
+	width: 300px;
+	margin: 25px;
+	background-color: white;
+	border-radius:15px;
+	transition: 0.2s;
+}
+.card-img img {
+	width: 100%;
+	border-radius: 10px 10px 0px 0px;
+}
+.card-body h2{
+	text-align: center;
+	margin-bottom: 10px;
+	padding: 10px;
+	font-family:Arial Nova Light;
+}
+
+.card-footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+button {
+	width: 150px;
+	background: black;
+	color: white;
+	border-radius:15px;
+	border:2px solid balck;
+	font-size: 17px;
+	cursor: pointer;
+	margin-bottom: 10px;
+	transition: 0.2s;
+	padding:10px;
+	margin:5px;
+	
+	}
+button:hover{
+	background-color:white;
+	color:black;
+	border:2px solid   black;
+}
+.cards:hover{
+	transform: scale(1.1); 
+}
+.vc{
+	font-size:60px;
+	text-align:center;
+	background-color:gray;
+	font-family:Iskoola Pota;
+	color: white;
+	height: 5;
+	padding: 110 10;
+}
+body {
+	background:rgba(0,0,0,0.7)url(category/category.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-blend-mode: darken;
+	margin: 0;
+}
+p{
+	text-align:center;
+}
+</style>
+</head>
+<body class="background-image">
+	<header>
+		<div class="wrapper">
+			<div class="logo">
+				<a>Vehicle Booking</a>
+			</div>
+			<nav>
+				<a href="homepage.html">Home</a>
+				<a href="category page.html">Category</a>
+				<a href="about.html">About</a>
+				<a href="contact.html">Contact</a>
+			</nav>
+		</div>
+	</header>
+	<div class="vc"><marquee>Vehicle Catogery</marquee></div>
+
+     <div class="container">
+        <div class="cards">
+		   <div class="card-img">
+		       <img src="category/cara.jpg" alt="cars">
+			</div>
+		   <div class="card-body">
+		        <h2> CARS </h2>
+				<p><b>Choose the car you want.We will give you our best servise<b></p>
+		   </div>
+		   <div class="card-footer"></div>
+		 <a href="collection.html"> <button><b>Collection</b></button></a>
+		 </div>
+		 <div class="cards">
+		   <div class="card-img">
+		       <img src="category/bikea.jpg" alt="bike">
+			</div>
+		   <div class="card-body">
+		        <h2>BIKES</h2>
+				<p><b>Choose the bike you want.We will give you our best servise<b></p>
+		   </div>
+		   <div class="card-footer"></div>
+		   <a href="bikecollection.html"><button><b>Collection</b></button></a>
+		 </div>
+	</div>	
+</body>
+</html>
